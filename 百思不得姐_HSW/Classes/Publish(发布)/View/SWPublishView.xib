@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWPublishView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SWPublishView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareBottomBackground" translatesAutoresizingMaskIntoConstraints="NO" id="uPH-S0-qnU"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQz-W6-dfc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="65h-jW-P2U"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="pushViewCancel:" destination="-1" eventType="touchUpInside" id="xmt-e5-C3F"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uPH-S0-qnU" secondAttribute="trailing" id="Bo1-Le-LxG"/>
+                <constraint firstItem="uPH-S0-qnU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FWd-dR-4Xj"/>
+                <constraint firstItem="uPH-S0-qnU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LjQ-ym-pP2"/>
+                <constraint firstAttribute="bottom" secondItem="uPH-S0-qnU" secondAttribute="bottom" id="Zgx-wR-04O"/>
+                <constraint firstAttribute="bottom" secondItem="xQz-W6-dfc" secondAttribute="bottom" constant="20" id="kzu-9G-c8K"/>
+                <constraint firstAttribute="trailing" secondItem="xQz-W6-dfc" secondAttribute="trailing" constant="30" id="oaw-we-BIN"/>
+                <constraint firstItem="xQz-W6-dfc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="yGF-ue-kGE"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="shareBottomBackground" width="320" height="343"/>
+    </resources>
+</document>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="SWRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-k8-7cf">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="E8c-Ja-qUz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-Wb-pOr">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO4-7b-rgq">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="DAx-xo-C8N"/>
+                            <constraint firstAttribute="height" constant="30" id="OEP-kU-4vE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="+ 订阅" backgroundImage="tagButtonBG">
+                            <color key="titleColor" red="1" green="0.42202221860566214" blue="0.27275578857499738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="tagButtonBGClick">
+                            <color key="titleColor" red="1" green="0.11297268291657869" blue="0.13034261598513386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-xg-nFW">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="总帖数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nt-M0-k4o">
+                        <frame key="frameInset" minX="112" minY="32" width="42" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdb-Il-TN7">
+                        <color key="backgroundColor" red="0.8009025528" green="0.82100129479999995" blue="0.83060796209999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="0ND-rP-3IV"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyb-JT-Tha">
+                        <frame key="frameInset" minX="159" minY="32" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.1129726829" blue="0.13034261599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Nt-M0-k4o" firstAttribute="top" secondItem="o2M-xg-nFW" secondAttribute="top" id="2sl-Lr-fZc"/>
+                    <constraint firstAttribute="bottom" secondItem="WSd-k8-7cf" secondAttribute="bottom" constant="10" id="52S-Aa-qJW"/>
+                    <constraint firstItem="rO4-7b-rgq" firstAttribute="centerY" secondItem="WSd-k8-7cf" secondAttribute="centerY" id="DM2-H3-2QR"/>
+                    <constraint firstItem="2Nt-M0-k4o" firstAttribute="leading" secondItem="Cdb-Il-TN7" secondAttribute="trailing" constant="8" id="Em7-oi-NOz"/>
+                    <constraint firstItem="Kyb-JT-Tha" firstAttribute="leading" secondItem="WSd-k8-7cf" secondAttribute="trailing" constant="5" id="Fsw-Za-Q5h"/>
+                    <constraint firstItem="Kyb-JT-Tha" firstAttribute="leading" secondItem="2Nt-M0-k4o" secondAttribute="trailing" constant="5" id="H8f-4M-Wkx"/>
+                    <constraint firstItem="2Nt-M0-k4o" firstAttribute="bottom" secondItem="o2M-xg-nFW" secondAttribute="bottom" id="Hm3-eq-31c"/>
+                    <constraint firstItem="WSd-k8-7cf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OUq-P6-BwX"/>
+                    <constraint firstItem="wEV-Wb-pOr" firstAttribute="top" secondItem="WSd-k8-7cf" secondAttribute="top" id="UV1-59-rvo"/>
+                    <constraint firstItem="o2M-xg-nFW" firstAttribute="bottom" secondItem="WSd-k8-7cf" secondAttribute="bottom" id="VkO-0F-Sw9"/>
+                    <constraint firstAttribute="trailing" secondItem="rO4-7b-rgq" secondAttribute="trailing" constant="10" id="bDe-Jw-Yzw"/>
+                    <constraint firstItem="WSd-k8-7cf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bdJ-3l-4A1"/>
+                    <constraint firstItem="Kyb-JT-Tha" firstAttribute="centerY" secondItem="2Nt-M0-k4o" secondAttribute="centerY" id="lpm-sE-aOU"/>
+                    <constraint firstItem="o2M-xg-nFW" firstAttribute="leading" secondItem="WSd-k8-7cf" secondAttribute="trailing" constant="10" id="lxn-6A-Va2"/>
+                    <constraint firstItem="2Nt-M0-k4o" firstAttribute="leading" secondItem="Cdb-Il-TN7" secondAttribute="trailing" constant="8" id="mZc-4P-Epv"/>
+                    <constraint firstItem="Cdb-Il-TN7" firstAttribute="top" secondItem="o2M-xg-nFW" secondAttribute="top" id="oo0-Qw-a4R"/>
+                    <constraint firstItem="Cdb-Il-TN7" firstAttribute="leading" secondItem="o2M-xg-nFW" secondAttribute="trailing" constant="8" id="pQz-go-DyD"/>
+                    <constraint firstItem="Cdb-Il-TN7" firstAttribute="bottom" secondItem="o2M-xg-nFW" secondAttribute="bottom" id="vY7-24-iLQ"/>
+                    <constraint firstItem="wEV-Wb-pOr" firstAttribute="leading" secondItem="WSd-k8-7cf" secondAttribute="trailing" constant="10" id="z7j-VJ-3C7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Em7-oi-NOz"/>
+                        <exclude reference="Fsw-Za-Q5h"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descView" destination="o2M-xg-nFW" id="fwq-1s-iLd"/>
+                <outlet property="iconView" destination="WSd-k8-7cf" id="DgX-rH-fvU"/>
+                <outlet property="lableView" destination="Kyb-JT-Tha" id="Zwc-CD-fWD"/>
+                <outlet property="nameView" destination="wEV-Wb-pOr" id="CyK-0Y-khO"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tagButtonBG" width="80" height="31"/>
+        <image name="tagButtonBGClick" width="80" height="31"/>
+    </resources>
+</document>
